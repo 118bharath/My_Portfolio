@@ -1,6 +1,9 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail,Twitter } from 'lucide-react';
 
 const Footer = () => {
+
+  const emailAddress='bharathvemula118@gmail.com';
+
   return (
     <footer className="py-8 sm:py-12 px-4 sm:px-6 md:px-8 bg-black border-t border-gray-800">
       <div className="max-w-6xl mx-auto">
@@ -11,7 +14,7 @@ const Footer = () => {
           
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 md:gap-8 order-1 md:order-2">
             <a 
-              href="https://github.com" 
+              href="https://github.com/118bharath" 
               className="flex items-center space-x-1 sm:space-x-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
               target="_blank"
               rel="noopener noreferrer"
@@ -21,7 +24,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/saibharath03/" 
               className="flex items-center space-x-1 sm:space-x-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
               target="_blank"
               rel="noopener noreferrer"
@@ -31,7 +34,7 @@ const Footer = () => {
             </a>
             
             <a 
-              href="mailto:bharathvemula118@gmail.com" 
+              href={`mailto:${emailAddress}`}
               className="flex items-center space-x-1 sm:space-x-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
             >
               <Mail className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -39,10 +42,10 @@ const Footer = () => {
             </a>
             
             <a 
-              href="https://x.com" 
+              href="https://x.com/Falcon_3103" 
               className="flex items-center space-x-1 sm:space-x-2 text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
             >
-              <span>📄</span>
+              <Twitter className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>X(Twitter)</span>
             </a>
           </div>

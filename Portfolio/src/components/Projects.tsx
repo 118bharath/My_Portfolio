@@ -1,21 +1,36 @@
-
 const Projects = () => {
   const projects = [
     {
-      title: "DASH",
-      subtitle: "Desktop App",
-      description: "DASH - Distributed Adaptive Serverless Hosting offers a peer to peer, cost-effective, and efficient alternative for hosting serverless functions. It delivers a streamlined solution, designed with developers in mind providing simplicity and effectiveness without compromising performance.",
+      title: "EmergencyAI",
+      subtitle: "AI-Integrated Ambulance System",
+      description: "This initiative focuses on upgrading emergency medical services (EMS) by adding Artificial Intelligence (AI) and smart human interaction tools directly into ambulances. The main goal is to improve how quickly and accurately medical teams can make decisions, especially in critical situations. By providing real-time data and better communication with hospitals, these intelligent ambulances aim to significantly improve patient outcomes during emergencies.",
       event: "College Project",
       year: "2024",
-      image: "/lovable-uploads/f0be4cec-fd10-4961-8d67-d4c6da935ff8.png"
+      image: "/EmergencyAI.png"
     },
     {
-      title: "Flash Drive Gaming Platform",
-      subtitle: "Side Project",
-      description: "A Next.js web platform featuring an AI image generator with custom-trained Stable Diffusion model and a few other arcade games. Built with Firebase and EpicRealism image model, it's just a DBMS course project that evolved into a playground for implementing advanced web technologies.",
-      event: "Side Project",
+      title: "BlockChain Validator",
+      subtitle: "Digital Certificates Validation",
+      description: "This project tackles the widespread issue of certificate forgery by proposing an innovative solution using blockchain technology. Traditionally, verifying certificates was slow, manual, and prone to fraud. This new system creates a robust and tamper-resistant platform where every certificate issuance is recorded securely with a timestamp. Thanks to blockchain's decentralized and immutable nature, certificates can be verified efficiently and transparently without relying on a single authority, significantly enhancing trust and reliability.",
+      event: "College Project",
       year: "2023",
-      image: "/lovable-uploads/68d6b649-fa2f-4344-a86e-45696e78bf2c.png"
+      image: "/Blockchain.png"
+    },
+    {
+      title: "BlogSphere",
+      subtitle: "Full-stack Blog Publishing Platform",
+      description: "This project tackles the widespread issue of certificate forgery by proposing an innovative solution using blockchain technology. Traditionally, verifying certificates was slow, manual, and prone to fraud. This new system creates a robust and tamper-resistant platform where every certificate issuance is recorded securely with a timestamp. Thanks to blockchain's decentralized and immutable nature, certificates can be verified efficiently and transparently without relying on a single authority, significantly enhancing trust and reliability.",
+      event: "Personal Project",
+      year: "2025",
+      image: "/BlogSphere.png"
+    },
+    {
+      title: "Travel-Buddy",
+      subtitle: "Side Project",
+      description: "This project, Travel Buddy, is a comprehensive travel planning and social platform that significantly enhanced my full-stack development skills. I built it with a React/Redux frontend and a Node.js/Express backend, incorporating RESTful APIs from Google Maps and OpenWeatherAPI. The application features location-based recommendations using MongoDB with geo-spatial indexing, secure OAuth 2.0 authentication, responsive design with Material-UI, and real-time functionalities powered by Socket.io. This experience solidified my understanding of modern web architecture and API integration.",
+      event: "Personal Project",
+      year: "2025",
+      image: "/travel-Buddy.png"
     }
   ];
 
@@ -33,9 +48,9 @@ const Projects = () => {
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-start">
-                <div className="relative overflow-hidden bg-gray-900 rounded-lg aspect-video order-2 lg:order-1">
+                <div className="relative overflow-hidden bg-gray-900 rounded-lg aspect-video h-full w-full min-h-[220px] order-2 lg:order-1">
                   <img 
-                    src={project.image} 
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
